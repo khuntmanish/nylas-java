@@ -55,7 +55,7 @@ public class ExampleConf {
 	}
 	
 	public int getInt(String key, int defaultValue) {
-		String value = get(key);
+		String value = getOrNull(key);
 		if (value == null) {
 			return defaultValue;
 		} else {
